@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+            display: grid;
+            background-color: aqua;
+            height: 800px;
+            gap: 5px;
+            grid-template-areas:
+                'h h n'
+                'l m r'
+                'l f r'
+            ;
+        }
+
+        .h {
+            grid-area: h;
+
+            background-color: green;
+        }
+
+        .n {
+            grid-area: n;
+            background-color: blue;
+        }
+
+        .l {
+
+            grid-area: l;
+            background-color: yellow;
+        }
+
+        .r {
+            grid-area: r;
+            background-color: pink;
+        }
+
+        .m {
+            grid-area: m;
+            background-color: red;
+        }
+
+        .f {
+            grid-area: f;
+            background-color: #3333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Creates a 3-column layout, adjust as needed */
+            grid-gap: 10px;
+            /* Space between grid items, adjust as needed */
+        }
+
+        .grid-item {
+            overflow: hidden;
+            /* Ensures content, like images, does not overflow the grid item */
+        }
+
+        .grid-item img {
+            width: 100%;
+            /* Makes the image fill the width of the grid item */
+            height: 100%;
+            /* Makes the image fill the height of the grid item */
+            object-fit: cover;
+            /* Scales the image as needed to cover the grid item, may crop the image */
+            display: block;
+            /* Removes default spacing/margin around the image */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container grid-container">
+        <div class="h grid-item"><img
+                src="https://images.pexels.com/photos/20187061/pexels-photo-20187061/free-photo-of-women-in-the-village-grow-rice-together-for-the-family.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+        <div class="n grid-item"><img
+                src="https://images.pexels.com/photos/19873069/pexels-photo-19873069/free-photo-of-a-person-writing-on-a-piece-of-paper-with-a-pen.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+        <div class="l grid-item"><img
+                src="https://images.pexels.com/photos/20204362/pexels-photo-20204362/free-photo-of-ashville-appalachian-mountains-north-carolina.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+        <div class="r grid-item"><img
+                src="https://images.pexels.com/photos/19378801/pexels-photo-19378801/free-photo-of-lamp-and-vase-on-desk-in-hotel-room.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+        <div class="m grid-item"><img
+                src="https://images.pexels.com/photos/20230678/pexels-photo-20230678/free-photo-of-the-view-of-the-ocean-from-the-top-of-a-cliff.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+        <div class="f grid-item"><img
+                src="https://images.pexels.com/photos/20141298/pexels-photo-20141298/free-photo-of-national-museum-of-scotland.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                alt=""></div>
+    </div>
+</body>
+
+</html>

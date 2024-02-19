@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 300px;
+            width: 400px;
+            background-color: transparent;
+            border: 2px solid black;
+            gap: 10px;
+            padding: 20px;
+            grid-template-areas: 
+            'h h r'
+            'l m r'
+            
+            
+            
+            ;
+        }
+        .h{
+            background-color: antiquewhite;
+            grid-area: h;
+        }
+        .l{
+            background-color: antiquewhite;
+            grid-area: l;
+        }
+        .r{
+            background-color: antiquewhite;
+            grid-area: r;
+        }
+        .m{
+            background-color: antiquewhite;
+            grid-area: m;
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="h">A</div>
+        <div class="l">B</div>
+        <div class="r">C</div>
+        <div class="m">D</div>
+    </div>
+</body>
+</html>
